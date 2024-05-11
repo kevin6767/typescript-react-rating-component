@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/typescript-react-star-rating-component/static/css/main.04fa8eb3.css",
+    "main.js": "/typescript-react-star-rating-component/static/js/main.daa89568.js",
+    "index.html": "/typescript-react-star-rating-component/index.html",
+    "main.04fa8eb3.css.map": "/typescript-react-star-rating-component/static/css/main.04fa8eb3.css.map",
+    "main.daa89568.js.map": "/typescript-react-star-rating-component/static/js/main.daa89568.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04fa8eb3.css",
+    "static/js/main.daa89568.js"
+  ]
+}
