@@ -2,20 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: lightslategray;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,3 +25,15 @@
     transform: rotate(360deg);
   }
 }
+
+.ratingContainer {
+  display: flex;
+  max-height: 80vmin;
+}
+.half-svg {
+  max-width: 5vmin;
+  width: 3vmin;
+  max-height: 8vmin;
+  transition: transform 0.3s ease;
+}
+
