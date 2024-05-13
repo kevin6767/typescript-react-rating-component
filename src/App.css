@@ -1,7 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .App-header {
   background-color: lightslategray;
@@ -25,15 +28,3 @@
     transform: rotate(360deg);
   }
 }
-
-.ratingContainer {
-  display: flex;
-  max-height: 80vmin;
-}
-.half-svg {
-  max-width: 5vmin;
-  width: 3vmin;
-  max-height: 8vmin;
-  transition: transform 0.3s ease;
-}
-

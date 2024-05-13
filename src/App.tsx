@@ -1,15 +1,21 @@
-import React from 'react';
-import './App.css';
-import RatingContainer from "./RatingContainer"
+import React from 'react'
+import './App.css'
+import Rating from './components/rating-component/Rating'
+import StarIcon from '@mui/icons-material/Star'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <RatingContainer ratingCount={10} />
-      </header>
-    </div>
-  );
+    // @ts-ignore
+    const [rating, setRating] = React.useState<Rating>(0)
+    return (
+        <div className="App">
+            <Rating
+                icon={<StarIcon />}
+                ratingCount={5}
+                onRatingChange={setRating}
+            />
+            <div>money machine {`${rating}`}</div>
+        </div>
+    )
 }
 
-export default App;
+export default App
