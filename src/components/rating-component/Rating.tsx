@@ -48,7 +48,7 @@ const Rating: React.FC<RatingProps> = ({
 
     const handleMouseEnter = (index: number) => {
         if (allowInteraction) {
-            setHoverIndex(index) // Set hoverIndex to current index
+            setHoverIndex(index)
         }
     }
 
@@ -78,7 +78,7 @@ const Rating: React.FC<RatingProps> = ({
                             //@ts-ignore
                             i <= hoverIndex
                                 ? `filled`
-                                : ``, // Adjust icon size here
+                                : ``,
                     })}
                 </div>
             )

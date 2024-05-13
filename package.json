@@ -60,5 +60,5 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
   },
-  "homepage": "https://kevin6767.github.io/typescript-react-star-rating-component"
+  "homepage": "https://kevin6767.github.io/typescript-react-rating-component"
 }
