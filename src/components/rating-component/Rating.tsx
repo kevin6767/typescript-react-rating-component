@@ -78,7 +78,7 @@ const Rating: React.FC<RatingProps> = ({
                             (i === hoverIndex && hoverIndex !== null) ||
                             //@ts-ignore
                             i <= hoverIndex
-                                ? `${className || ``}filled`
+                                ? `${className || ``} filled`
                                 : `${className || ``}`,
                     })}
                 </div>
