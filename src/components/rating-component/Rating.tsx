@@ -1,5 +1,6 @@
 import React, {useState, useEffect, ReactElement} from 'react'
 import '../rating-component/styles/rating.scss'
+
 interface RatingProps {
     icon: ReactElement
     ratingCount: number
