@@ -1,6 +1,6 @@
 {
   "name": "typescript-react-rating-component",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "dependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.11",
@@ -9,6 +9,11 @@
     "react": "^18.3.1",
     "react-scripts": "5.0.1",
     "sass": "^1.77.1",
+    "typescript": "^5.4.5"
+  },
+  "overrides": {
+    "@typescript-eslint/typescript-estree": "^5.57.1",
+    "fork-ts-checker-webpack-plugin": "^6.5.3",
     "typescript": "^5.4.5"
   },
   "scripts": {
