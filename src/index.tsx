@@ -12,7 +12,7 @@ interface RatingProps {
     classNameContainer?: string
 }
 
-const Index: React.FC<RatingProps> = ({
+const Rating: React.FC<RatingProps> = ({
     icon,
     ratingCount,
     initialRating = 0,
@@ -94,4 +94,4 @@ const Index: React.FC<RatingProps> = ({
     )
 }
 
-export default Index
+export default Rating
