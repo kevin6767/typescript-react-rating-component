@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, {useState, useEffect, ReactElement} from 'react'
 import '../rating-component/styles/rating.scss'
 interface RatingProps {
-    icon: JSX.Element
+    icon: ReactElement
     ratingCount: number
     initialRating?: number
     allowInteraction?: boolean
@@ -24,7 +24,7 @@ const Rating: React.FC<RatingProps> = ({
     const [clickedIndex, setClickedIndex] = useState<number | null>(
         initialRating - 1
     )
-    const [hoverIndex, setHoverIndex] = useState<number | null>(null)
+    const [hoverIndex, setHoverIndex] = useState<number | null>(0 - 1)
 
     useEffect(() => {
         setClickedIndex(initialRating - 1)
@@ -53,7 +53,7 @@ const Rating: React.FC<RatingProps> = ({
     }
 
     const handleMouseLeave = () => {
-        setHoverIndex(null)
+        setHoverIndex(0 - 1)
     }
 
     const renderStars = () => {
@@ -77,8 +77,8 @@ const Rating: React.FC<RatingProps> = ({
                             (i === hoverIndex && hoverIndex !== null) ||
                             //@ts-ignore
                             i <= hoverIndex
-                                ? `filled`
-                                : ``,
+                                ? `${className || ``}filled`
+                                : `${className || ``}`,
                     })}
                 </div>
             )
